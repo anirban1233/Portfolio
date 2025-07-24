@@ -5,20 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Personal Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!--    Header  Design  -->
-      <header class="header">
-        <a href="#" class="logo">Portfolios</a>
+ <!--    Header  Design  -->
+  <header class="header">
+    <a href="#" class="logo">Portfolios</a>
 
-        <nav class="navbar">
-          <a href="#" class="activiyt">Home</a>
-          <a href="#">About</a>
-          <a href="#">Skills</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact</a>
-        </nav>
-      </header>
-      <script src="app.js"></script>
+    <i class="fa-duotone fa-solid fa-bars" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="activity">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#potfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!--  Home Section Design  -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello👋</h3>
+      <h1>I'am Anirban Das</h1>
+      <h3>Frontend Devloper</h3>
+
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <a href="#" class="btn">Download CV</a>
+    </div>
+    <div class="home-image">
+      <img src="anirban1.jpeg" alt="">
+    </div>
+  </section>
+       
+  <script src="app.js"></script>
 </body>
 </html>
