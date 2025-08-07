@@ -110,15 +110,15 @@ span {
     border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
-    color: var(--main-color);
+    color: var(--text-color);
     margin: 3rem 1.5rem 3rem 0;
-    transition: .5s ease;
+    transition: .5s ease 0.2s;  
 }
 
 .social-media a:hover {
     background: var(--main-color);
     color: var(--snd-bg-color);
-    box-shadow: var(--main-color);
+    box-shadow: 0 0 2px 2px var(--main-color);
 }
 
 .btn {
@@ -131,7 +131,13 @@ span {
     color: var(--bg-color);
     letter-spacing: 0.1rem;
     font-weight: 600;
-    transition: 0.5s ease;
+    transition: 0.5s ease 0.2s;
+}
+
+.btn:hover{
+    box-shadow:  0 0 0.8rem var(--main-color);
+    color: var(--text-color);
+
 }
 
 .about { 
@@ -242,3 +248,41 @@ span {
 }
 
 
+
+@media (max-width: 1200px){
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .header {
+        padding:  2ter 3%;
+    }
+
+    section {
+        padding: 10rem 3%;
+    }
+
+    .skills {
+        padding: 7rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon{
+        display: block;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+}
